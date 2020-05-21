@@ -2,6 +2,27 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFnOY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFnOY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqaqE.ttf) format('truetype');
+}
 /* VARIABLES */
 /* MIXINS */
 html,
@@ -140,12 +161,12 @@ body {
 #header {
   display: inline;
   margin: 5%;
-  width: 80vw;
 }
 #header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: "raleway", sans-serif;
   margin: 1% 10%;
 }
 @media (max-width: 500px) {
@@ -193,8 +214,8 @@ body {
   border-radius: 2%;
 }
 #hero .top-container .img-background {
-  background: rgba(183, 122, 136, 0.74);
-  width: 17vw;
+  background: #7c884f;
+  width: 16vw;
   padding-top: 0.5%;
   border-radius: 2% 0% 50% 0%;
 }
@@ -223,6 +244,7 @@ body {
   font-size: 3em;
   margin-bottom: 1%;
   font-weight: bold;
+  font-family: "fajalla one", serif;
 }
 @media (max-width: 500px) {
   #hero h1 {
@@ -234,6 +256,7 @@ body {
   font-size: 1.4em;
   margin-bottom: 1%;
   font-style: italic;
+  font-family: "fajalla one", serif;
 }
 @media (max-width: 500px) {
   #hero h2 {
@@ -257,6 +280,7 @@ body {
   margin-bottom: 2%;
   margin-left: 2%;
   font-size: 1.3em;
+  font-family: "fajalla one", serif;
 }
 @media (max-width: 500px) {
   #hero p {
@@ -269,12 +293,13 @@ body {
   width: 25%;
   padding: 2% 10%;
   border-radius: 5%;
-  background: #f1c2c2;
+  background: #7c884f;
   box-shadow: 2px 2px #b39fa4;
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 1em;
+  font-family: "raleway", sans-serif;
 }
 @media (max-width: 500px) {
   #hero .button {
@@ -282,7 +307,7 @@ body {
   }
 }
 #hero .button:hover {
-  background: #cf9c9c;
+  background: #535c35;
   color: white;
 }
 @media (max-width: 500px) {
@@ -319,9 +344,11 @@ body {
   font-size: 2em;
   margin-bottom: 2%;
   font-weight: bold;
+  font-family: "fajalla one", serif;
 }
 .mid-container p {
   line-height: 140%;
+  font-family: "raleway", sans-serif;
 }
 .list {
   width: 40%;
@@ -334,10 +361,12 @@ body {
 }
 .list h2 {
   font-size: 1.5em;
+  font-family: "fajalla one", serif;
 }
 .list li {
   border: solid rgba(183, 122, 136, 0.74) 1px;
   padding: 5%;
+  font-family: "raleway", sans-serif;
 }
 .btm-container {
   display: flex;
@@ -349,6 +378,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 2%;
+  font-family: "fajalla one", serif;
 }
 .btm-container tr {
   justify-content: center;
@@ -359,18 +389,20 @@ body {
   padding: 2%;
   border-bottom: solid 1px rgba(183, 122, 136, 0.74);
   border-top: solid 1px rgba(183, 122, 136, 0.74);
+  font-family: "fajalla one", serif;
 }
 .btm-container tr td {
   padding: 1%;
+  font-family: "raleway", sans-serif;
 }
 .btm-container .even {
-  background: rgba(252, 219, 199, 0.7);
+  background: rgba(189, 207, 122, 0.445);
 }
 #footer {
   display: flex;
   justify-content: center;
   height: 10vh;
-  background: #f8d2bb;
+  background: #7c884f;
 }
 #footer p {
   justify-content: center;
